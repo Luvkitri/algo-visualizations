@@ -1,4 +1,5 @@
 import React from 'react';
+import SortCanvas from '../SortCanvas';
 
 type Props = {
   value: number,
@@ -9,7 +10,7 @@ const TabPanel: React.FC<Props> = ({ value, index }) => {
   return (
     <div>
       {value === index && (
-        <h1>{index}</h1>
+        <SortCanvas />
       )}
     </div>
   )
