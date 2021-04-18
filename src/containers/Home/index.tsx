@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import Navbar from '../../components/Navbar';
+import SidePanel from '../../components/SidePanel';
 import TabPanel from '../../components/TabPanel';
 
 const Home: React.FC = () => {
@@ -16,9 +17,8 @@ const Home: React.FC = () => {
   return (
     <div>
       <Navbar selectedTab={selectedTab} handleTabChange={handleTabChange} />
+      <SidePanel />
       <TabPanel value={selectedTab} index={0} />
-      <TabPanel value={selectedTab} index={1} />
-      <TabPanel value={selectedTab} index={2} />
     </div>
   );
 };
